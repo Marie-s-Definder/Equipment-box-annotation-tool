@@ -78,7 +78,6 @@ def genCSV():
                                        ','.join(map(str, locations[index])),
                                        elements[4],
                                        'buttom'])
-                        continue
                     writeInCSV.append([elements[0],elements[1],elements[2],elements[3],
                                        ','.join(map(str, locations[index])),
                                        elements[4],
