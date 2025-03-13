@@ -83,15 +83,12 @@ def genCSV():
 
 if __name__ == '__main__':
 
-    # 创建解析器对象
     parser = argparse.ArgumentParser(description='第一步先生成txt,第二步再生成csv,因此第一次参数为txt,第二次参数为csv')
 
-    # 添加命令行参数
     parser.add_argument('type')
 
     args = parser.parse_args()
 
-    # 输出打招呼的内容
     if args.type == 'txt':
         genTxt()
     elif args.type == 'csv':
